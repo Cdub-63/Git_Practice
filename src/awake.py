@@ -14,7 +14,7 @@ while(True):
     while(x<numMin):
         mouse_pos2 = pyautogui.position()
         if mouse_pos != mouse_pos2:
-            x = 0
+            break
         else:
             time.sleep(60)
             x+=1
