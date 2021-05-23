@@ -13,12 +13,12 @@ while(True):
     mouse_pos = pyautogui.position()
     print(mouse_pos)
     while(x<numMin):
+        time.sleep(60)
         mouse_pos2 = pyautogui.position()
         print(f"mouse 1 : {mouse_pos} mouse 2: {mouse_pos2}")
         if mouse_pos != mouse_pos2:
-            break
+            x = 0
         else:
-            time.sleep(60)
             x+=1
     for i in range(0,200):
         pyautogui.moveTo(0,i*4)
