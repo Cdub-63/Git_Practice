@@ -14,7 +14,7 @@ while(True):
         mouse_pos = pyautogui.position()
         time.sleep(60)
         mouse_pos2 = pyautogui.position()
-        print(f"mouse 1 : {mouse_pos} mouse 2: {mouse_pos2}")
+        #print(f"mouse 1 : {mouse_pos} mouse 2: {mouse_pos2}"); Testing mouse positon tracking
         if mouse_pos != mouse_pos2:
             x = 0
         else:
