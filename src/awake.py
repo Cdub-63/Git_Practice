@@ -11,8 +11,10 @@ else:
 while(True):
     x=0
     mouse_pos = pyautogui.position()
+    print(mouse_pos)
     while(x<numMin):
         mouse_pos2 = pyautogui.position()
+        print(f"mouse 1 : (mouse_pos} mouse 2: {mouse_pos2}")
         if mouse_pos != mouse_pos2:
             break
         else:
